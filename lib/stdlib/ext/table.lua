@@ -87,6 +87,8 @@ function table.each(t, func)
   end
 end
 
+table.foreach = table.each
+
 function table.find(t, func)
   for k, v in pairs(t) do
     if func(v) then return v, k end
